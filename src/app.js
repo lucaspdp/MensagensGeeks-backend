@@ -17,6 +17,6 @@ app.use(express.json());
 app.use(routes);
 
 
-app.listen("8000", ()=>{
+app.listen(process.env.PORT || 3000, ()=>{
     console.log("Server iniciado na porta 8000")
 });
