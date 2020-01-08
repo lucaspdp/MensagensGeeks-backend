@@ -18,5 +18,5 @@ app.use(routes);
 
 
 app.listen(process.env.PORT || 3000, ()=>{
-    console.log("Server iniciado na porta 8000")
+    console.log("Server iniciado na porta 3000")
 });

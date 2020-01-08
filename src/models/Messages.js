@@ -2,11 +2,11 @@ import {Schema, model} from 'mongoose'
 
 const MessageSchema = new Schema({
     fase:{
-        type: Number,
+        type: String,
         required: true
     },
     aula:{
-        type: Number,
+        type: String,
         required: true
     },
     mensagem:{
