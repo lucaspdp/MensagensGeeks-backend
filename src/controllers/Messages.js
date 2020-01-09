@@ -51,5 +51,16 @@ export default {
         }
 
         return res.status(400).json({error: "Nenhuma mensagem encontrada"})
+    },
+
+    async delete(req, res){
+        const {id} = req.params;
+        const message = await Messages.findByIdAndRemove(id);
+
+        if(message){
+            return res.status(200).json({msg: "Success!"});
+        }
+
+        return res.status(400).json({msg: "Not found!"});
     }
 }
